@@ -1,0 +1,157 @@
+* {
+  margin: 0; }
+
+body {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 200;
+  letter-spacing: 1px;
+  background: #eedde0; }
+
+#menu {
+  position: sticky;
+  top: 0;
+  background: #eedde0;
+  padding: 55px 10% 25px;
+  z-index: 1; }
+  #menu #hamburger {
+    display: none; }
+  #menu .options {
+    position: relative;
+    top: -30px;
+    list-style: none;
+    float: right;
+    min-width: 50%; }
+    #menu .options li {
+      float: left;
+      margin-left: 5%;
+      padding: 5px 10px;
+      border-radius: 5px;
+      position: relative;
+      transition: 0.25s; }
+      #menu .options li:hover {
+        background: white/1.5; }
+      #menu .options li:first-child {
+        background: white/1.5; }
+    #menu .options a {
+      color: #fff;
+      text-decoration: none;
+      font-family: 'Titillium Web', sans-serif;
+      text-transform: uppercase; }
+
+@media (max-width: 1220px) {
+  .logo {
+    padding: 25px 50px;
+    left: 0;
+    position: absolute;
+    display: none; }
+
+  #menu {
+    z-index: 11;
+    transition: 0.25s;
+    position: fixed;
+    top: -200vh;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    padding: 0; }
+    #menu li {
+      z-index: 2; }
+    #menu #hamburger {
+      z-index: 3;
+      display: block;
+      width: 30px;
+      height: 0;
+      border: 3px solid #fff;
+      position: fixed;
+      top: 5vh;
+      right: 2.5vh;
+      transition: 0.2s;
+      border-radius: 5px; }
+      #menu #hamburger:after, #menu #hamburger:before {
+        transition: 0.3s;
+        content: '';
+        display: block;
+        border: 3px solid #fff;
+        width: 30px;
+        height: 0;
+        position: absolute;
+        left: -3px;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        margin: auto;
+        border-radius: 5px; }
+      #menu #hamburger:after {
+        top: 20px; }
+      #menu #hamburger:before {
+        bottom: 20px; }
+      #menu #hamburger:hover {
+        cursor: pointer; }
+    #menu #hamburger.open {
+      height: 30px;
+      margin-top: -15px;
+      border-radius: 50%; }
+      #menu #hamburger.open:after, #menu #hamburger.open:before {
+        content: '';
+        display: block;
+        border: 3px solid #fff;
+        width: 20px;
+        height: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto; }
+      #menu #hamburger.open:after {
+        transform: rotate(45deg); }
+      #menu #hamburger.open:before {
+        transform: rotate(-45deg); }
+    #menu .options {
+      position: absolute;
+      top: -10%;
+      bottom: 0;
+      margin: auto;
+      padding: 0;
+      height: 50%; }
+      #menu .options li {
+        margin: 3% 0;
+        border-radius: 0;
+        padding: 2.5% 0;
+        text-align: center; }
+    #menu ul {
+      width: 100%; }
+    #menu li {
+      margin: 5% 0;
+      width: 100%; }
+
+  #header {
+    padding-top: 100px; }
+    #header h2 {
+      font-size: 2em;
+      width: 80%; }
+
+  .animacion {
+    width: 110%;
+    margin-top: 58%; } }
+@media (max-width: 610px) {
+  #content p {
+    padding: 0; }
+  #content .imgWrapper .imgWrapper__wrapper {
+    width: 100%;
+    margin-bottom: 20%; }
+
+  #bottom span {
+    margin: 15px 0; }
+
+  #bottom form div label {
+    float: left;
+    width: 100%; }
+  #bottom form div label + label {
+    margin-left: 0%; }
+
+  .animacion {
+    width: 106%;
+    margin-top: 61%; } }
+
+/*# sourceMappingURL=style.css.map */

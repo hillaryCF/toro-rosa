@@ -1,0 +1,39 @@
+#menu {
+    position: sticky;
+    top: 0;
+    background: rgb(238, 221, 224);
+    padding: 55px 10% 25px;
+    z-index: 1;
+    #hamburger {
+        display: none;
+    }
+    .options {
+        position: relative;
+        top: -30px;
+        list-style: none;
+        float: right;
+        min-width: 50%;
+        li {
+            float: left;
+            margin-left: 5%;
+            padding: 5px 10px;
+            border-radius: 5px;
+            position: relative;
+            transition: 0.25s;
+            &:hover {
+                background: white/1.5;
+            }
+            &:first-child {
+                background: white/1.5;
+            }
+        }
+        a {
+            color: $white;
+            text-decoration: none;
+            font-family: 'Titillium Web', sans-serif;
+            text-transform: uppercase;
+        }
+    }
+
+    
+}

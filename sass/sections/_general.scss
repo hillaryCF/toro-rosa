@@ -1,0 +1,34 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(238, 220, 223);
+}
+
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-y: visible;
+}
+
+ul{
+    list-style: none;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+

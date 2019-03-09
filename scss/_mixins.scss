@@ -1,0 +1,54 @@
+@mixin button($color, $bottom: 130px) {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: $bottom;
+    margin: auto;
+    width: 295px;
+    height: 70px;
+    background: $color;
+    border-bottom: 5px solid $color/1.25;
+    border-radius: 5px;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 0.55px;
+    transition: 0.25s;
+    &:hover {
+        background: $color/1.5;
+        cursor: pointer;
+        font-size: 0.95em;
+        color: $white/1.5;
+    }
+    &:active {
+        letter-spacing: 0.25px;
+    }
+}
+
+@mixin after_before {
+    right: 0%;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 7.5px;
+    border-radius: 5px;
+    background: $white;
+    position: absolute;
+}
+
+@mixin title_h2 {
+    color: $white;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    letter-spacing: 3px;
+    font-weight: 600;
+    padding-top: 120px;
+}
+
+@mixin hr($color) {
+    width: 7.5%;
+    height: 5px;
+    border: 0;
+    background: $color/1.25;
+    margin: 15px auto 25px;
+}

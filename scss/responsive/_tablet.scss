@@ -1,0 +1,117 @@
+@media (max-width: $tabletpx) {
+    .logo {
+        padding: 25px 50px;
+        left: 0;
+        position: absolute;
+        display: none;
+    }
+    #menu {
+        li{
+            z-index: 2;
+        }
+        z-index: 11;
+        transition: 0.25s;
+        position: fixed;
+        top: -200vh; //js top --> 0
+        height: 100vh;
+        left: 0;
+        right: 0;
+        padding: 0;
+        #hamburger {
+            z-index: 3;
+            display: block;
+            width: 30px;
+            height: 0;
+            border: 3px solid #fff;
+            position: fixed;
+            top: 5vh;
+            right: 2.5vh;
+            transition: 0.2s;
+            border-radius: 5px;
+            &:after,
+            &:before {
+                transition: 0.3s;
+                content: '';
+                display: block;
+                border: 3px solid $white;
+                width: 30px;
+                height: 0;
+                position: absolute;
+                left: -3px;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                margin: auto;
+                border-radius: 5px;
+            }
+            &:after {
+                top: 20px;
+            }
+            &:before {
+                bottom: 20px;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        #hamburger.open {
+            height: 30px;
+            margin-top: -15px;
+            border-radius: 50%;
+            &:after,
+            &:before {
+                content: '';
+                display: block;
+                border: 3px solid $white;
+                width: 20px;
+                height: 0;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+            }
+            &:after {
+                transform: rotate(45deg);
+            }
+            &:before {
+                transform: rotate(-45deg);
+            }
+        }
+        .options {
+            position: absolute;
+            top: -10%;
+            bottom: 0;
+            margin: auto;
+            padding: 0;
+            height: 50%;
+            li {
+                margin: 3% 0;
+                border-radius: 0;
+                padding: 2.5% 0;
+                text-align: center;
+            }
+        }
+        ul {
+            width: 100%;
+        }
+        li {
+            margin: 5% 0;
+            width: 100%;
+        }
+    }
+    #header {
+        padding-top: 100px;
+        h2 {
+            font-size: 2em;
+            width: 80%;
+        }
+    }
+
+    .animacion{
+        width: 110%;
+        margin-top: 58%;
+        
+    }
+}
